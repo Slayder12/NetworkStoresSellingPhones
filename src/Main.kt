@@ -1,5 +1,5 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+
+
 fun main() = onlineShop()
 
 private fun onlineShop() {
@@ -19,15 +19,16 @@ private fun onlineShop() {
 
         when (city) {
             1 -> {
-                //val shop = Magnit()
-                //Process().shopping(shop)
-                //repairServiceFirstVisit = Process().repairPhone(repairServiceFirstVisit, shop)
+                val shop = Magnit()
+                Process().shopping(shop)
+                repairServiceFirstVisit = Process().repairPhone(repairServiceFirstVisit, shop)
+                isFirstVisit = false
             }
 
             2 -> {
-                //val shop = Tehnopark()
-                //Process().shopping(shop)
-                //isFirstVisit = false
+                val shop = Tehnopark()
+                Process().shopping(shop)
+                isFirstVisit = false
             }
 
             0 -> {
