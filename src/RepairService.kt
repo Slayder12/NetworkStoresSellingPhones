@@ -1,0 +1,3 @@
+interface RepairService{
+    fun repair()
+}
